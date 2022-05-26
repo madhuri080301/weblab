@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var average= (a)=>{
+          var n=a.length;
+          var total=0;
+          for(let i=0;i<n;i++)
+          {
+             total=total+parseInt(a[i]);
+          }
+          return total/n;
+      }
+     n=prompt(" enter the size of array");
+     var a=[n];
+     for(let j=0;j<n;j++)
+     {
+         a[j]=prompt(" enter the array element "+j);
+     }
+
+     document.write(" the average of array elements is :"+average(a));
+
+    </script>
+</body>
+</html>
